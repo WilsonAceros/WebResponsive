@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    width: 25%;
+    height: 200px;
+    margin-top: 100px;
+    float: left;
+}
+
+div:nth-child(1){
+    background-color: crimson;
+}
+
+div:nth-child(2){
+    background-color: darkcyan;
+}
+
+div:nth-child(3){
+    background-color: orangered;
+}
+
+div:nth-child(4){
+    background-color: magenta
+}
+
+@media screen and (min-width: 1000px){
+    div:nth-child(1){
+        background-color: black;
+    }
+}
+
+@media screen and (max-width: 600px){
+    div{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width: 600px) {
+    div:nth-child(2){
+        background-color: mediumseagreen;
+    }
+    div{
+        width: 50%;
+        margin-top: 0;
+    }
+}
